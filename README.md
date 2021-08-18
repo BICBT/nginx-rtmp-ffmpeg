@@ -10,7 +10,7 @@ docker run \
     --rm \
     -p 1935:1935 \ 
     -v "$(pwd)/nginx.conf":/etc/nginx/nginx.conf \
-    registry.cn-hongkong.aliyuncs.com/mengli/nginx-rtmp-ffmpeg:latest
+    registry.cn-beijing.aliyuncs.com/cbt-prod/nginx-rtmp-ffmpeg:latest
 ```
     
 ## Run Docker (GPU support)
@@ -36,5 +36,5 @@ https://docs.docker.com/engine/install/ubuntu
         --rm \
         -p 1935:1935 \ 
         -v "$(pwd)/nginx.conf":/etc/nginx/nginx.conf \
-        registry.cn-hongkong.aliyuncs.com/mengli/nginx-rtmp-ffmpeg:latest-gpu
+        registry.cn-prod.aliyuncs.com/cbt-prod/nginx-rtmp-ffmpeg:latest-gpu
     ```
